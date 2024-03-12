@@ -29,19 +29,55 @@
 #         continue
 #     print('Huruf saat ini: {}'.format(huruf))
 
-numbers = [1,2,3,4,5]
-for num in numbers:
-    if num == 5:
-        print("Angka ditemukan, Program berhenti!")
-        break
-else:
-    print('Angka tidak ditemukan.')
+# numbers = [1,2,3,4,5]
+# for num in numbers:
+#     if num == 5:
+#         print("Angka ditemukan, Program berhenti!")
+#         break
+# else:
+#     print('Angka tidak ditemukan.')
     
-print('\n')
+# print('\n')
 
-count = 0
-while count < 3:
-    print("Repeat")
-    count +=1
-else:
-    print('Blok else dieksekusi karena kondisi pada while salah (3<3 == False).')
+# count = 0
+# while count < 3:
+#     print("Repeat")
+#     count +=1
+# else:
+#     print('Blok else dieksekusi karena kondisi pada while salah (3<3 == False).')
+
+# secret_word = "goyo"
+# cntr = 0
+# while True:
+#     word = input("Input the Secret Word: ").lower()
+#     cntr += 1
+#     if word == "goyo":
+#         print("Secret word was found, Mission Success!")
+#         break
+#     elif word != "goyo" and cntr > 6:
+#         print("Mission failed, secret word can't found!")
+#         break
+
+# n = 10
+# while n > 0:
+#     n -= 1
+#     if n == 5:
+#         break
+#     print(n)
+# else:
+#     print("Loop selesai!")
+
+## list comprehension
+# number = [1, 2, 3, 4]
+# power = []
+
+# for n in number:
+#     power.append(n**2)
+# print(power)
+## alternative way
+# number = [1, 2, 3, 4]
+# power = [n**2 for n in number]
+# print(power)
+
+evenNumber = [n for n in range(501) if n % 2 == 0]
+print(evenNumber)
